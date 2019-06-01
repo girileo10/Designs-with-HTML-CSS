@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<style>
+    body{
+        width: 600px;
+        height: 700px;
+        
+    }
+    
+    .tweet{
+         width: 600px;
+         height: 350px;
+    }
+    header {
+    display: flex;
+  }
+  header {
+    display: flex;
+  }
+  header .profile-thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+  }
+  header .profile-name {
+    display: flex;
+    margin-left: 10px;
+  }
+  header .follow-btn {
+    display: flex;
+    margin: 0 0 0 auto;
+  }
+  header .follow-btn button {
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+  }
+  header h3, header h4 {
+    display: flex;
+    margin: 0;
+  }
+  #inner p {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  #inner hr {
+    margin: 20px 0;
+    border-style: solid;
+    opacity: 0.1;
+  }
+  footer {
+   display: flex; 
+  }
+  footer .stats {
+    display: flex;
+    font-size: 15px;
+  }
+  footer .stats strong {
+    font-size: 18px;
+  }
+  footer .stats .likes {
+    margin-left: 10px;
+  }
+  footer .cta {
+    margin-left: auto;
+  }
+  footer .cta button {
+    border: 0;
+    background: transparent;
+  }
+</style>
+<body>
+    <div>
+        <h3>Home</h3>
+        <hr>
+        <div class="tweet">
+            <header>
+                <img src="https://pbs.twimg.com/profile_images/378800000147359764/54dc9a5c34e912f34db8662d53d16a39_400x400.png" alt="Quincy Larson's profile picture" class="profile-thumbnail">
+                <div class="profile-name">
+                  <h3>Quincy Larson</h3>
+                  <h4>@ossia</h4>
+                </div>
+                <div class="follow-btn">
+                  <button>Follow</button>
+                </div>
+              </header>
+              <div id="inner">
+                <p>I meet so many people who are in search of that one trick that will help them work smart. Even if you work smart, you still have to work hard.</p>
+                <span class="date">1:32 PM - 12 Jan 2018</span>
+                <hr>
+              </div>
+              <footer>
+                <div class="stats">
+                  <div class="Retweets">
+                    <strong>107</strong> Retweets
+                  </div>
+                  <div class="likes">
+                    <strong>431</strong> Likes
+                  </div>
+                </div>
+                <div class="cta">
+                  <button class="share-btn">Share</button>
+                  <button class="retweet-btn">Retweet</button>
+                  <button class="like-btn">Like</button>
+                </div>
+              </footer>
+        </div>
+
+        <div class="tweet">
+          <header>
+            <img src="data:image/png;base64,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" alt="FCB's profile picture" class="profile-thumbnail">
+            <div class="profile-name">
+              <h3>FC Barcelona</h3>
+              <h4>@barcelona</h4>
+            </div>
+            <div class="follow-btn">
+              <button>Follow</button>
+            </div>
+          </header>
+          <div id="inner">
+            <p>Hard fought win at old trafford.Next meeting at Camp Nou!!!!!!! #MUFCvBAR #wecolorfootball #forcabarca</p>
+            <span class="date">1:45 PM - 12 Jan 2018</span>
+            <hr>
+          </div>
+          <footer>
+            <div class="stats">
+              <div class="Retweets">
+                <strong>1.1k</strong> Retweets
+              </div>
+              <div class="likes">
+                <strong>31k</strong> Likes
+              </div>
+            </div>
+            <div class="cta">
+              <button class="share-btn">Share</button>
+              <button class="retweet-btn">Retweet</button>
+              <button class="like-btn">Like</button>
+            </div>
+          </footer>
+        </div>
+    </div>
+</body>
